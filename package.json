@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "babel src -d dist",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "jest",
