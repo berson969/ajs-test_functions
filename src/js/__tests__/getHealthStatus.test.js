@@ -1,3 +1,4 @@
+import {expect, test} from '@jest/globals'
 import getHealthStatus from '../getHealthStatus'
 
 test('healthy-test', () => {
