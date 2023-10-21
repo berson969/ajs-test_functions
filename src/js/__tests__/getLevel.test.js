@@ -11,7 +11,7 @@ beforeEach(() => {
 test('correct-url-test', () => {
     fetchData.mockReturnValueOnce('{}')
     getLevel(500)
-    expect(fetchData).toBeCalledWith("https://server/user/500")
+    expect(fetchData).toHaveBeenCalledWith("https://server/user/500")
 })
 
 test('get-ok-test', () => {
