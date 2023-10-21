@@ -1,5 +1,5 @@
 // Демо-реализация функции fetchData (модуль http):
+// eslint-disable-next-line no-unused-vars
 export function fetchData(url) {
-        console.log(url)
-        throw new Error('Mock this!');
+  throw new Error('Mock this!');
 }

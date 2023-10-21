@@ -1,2 +1,1 @@
-import './js/getHealthStatus'
-
+import './js/getHealthStatus';
