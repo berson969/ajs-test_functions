@@ -1,15 +1,17 @@
-// import { expect, jest, test, beforeEach } from '@jest/globals';
+// import {
+//   expect, jest, test, beforeEach,
+// } from '@jest/globals';
 import getLevel from '../getLevel';
-import { fetchData } from '../http';
+import fetchData from '../http';
 
-jest.mock('../http')
+jest.mock('../http');
 
 beforeEach(() => {
   jest.resetAllMocks();
 });
 
 test('correct-url-test', () => {
-  fetchData.mockReturnValueOnce('{}')
+  fetchData.mockReturnValueOnce('{}');
   getLevel(500);
   expect(fetchData).toHaveBeenCalledWith('https://server/user/500');
 });
